@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Teacher video maker 2k18 ultimate edition</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome.css">
+  </head>
+  <body>
+    <div role="dialog" class="dialog">
+      <div class="dialog-content">
+        <h2>Teach video init screen</h2>
+        <label for="video_url">
+          Vložte odkaz na video
+        </label>
+        <input id="video_url" class="input">
+        <label for="json_data">Vložte JSON data</label>
+        <textarea id="json_data" class="textarea"></textarea>
+        <label for="json_file">
+          Nebo vložte odkaz na soubor
+        </label>
+        <input id="json_file" type="file" class="input">
+        <button id="remove_file">Odebrat soubor</button>
+        <div class="error">Nastala chyba!</div>
+        <div class="buttons">
+          <button class="button">Go!</button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <h1>Hello there.</h1>
+      <div class="wrapper">
+        <div class="video">
+          <video controls muted>
+          </video>
+        </div>
+        <div class="pinned_notes"></div>
+        <div class="divider"></div>
+        <div class="notes">
+            <!-- NOTES BE INSERTED HERE BY THE JS CODE -->
+         </div>
+      </div>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/frontend.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/video_timer.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: #ccd0d0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.video, .notes, .pinned_notes  {
+  width: 50%;
+  display: block;
+  float: left;
+  padding: 3px;
+}
+
+.video video {
+  max-width: 100%;
+}
+.note {
+  height: 7em;
+  position: relative;
+  color: black;
+}
+.note .note-header {
+  width: 7em;
+  height: 7em;
+  border-radius: 1em;
+  background: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: solid 3px #ccd0d0;
+  position: absolute;
+  line-height: calc(7em - 6px);
+  text-align: center;
+}
+.note .note-header.note-icon i {
+  font-size: 4em;
+  line-height: 1.7em;
+}
+.note .note-heading {
+  font-size: 1.1em;
+}
+
+.note .note-body {
+  width: calc(100% - 3.5em);
+  border: solid 3px #ccd0d0;
+  padding: 3px 0 0 3.8em;
+  border-left: 0;
+  float: right;
+  height: 7em;
+  background: white;
+  border-radius: 0 1em 1em 0;
+}
+.note .note-text {
+  font-size: 0.9em;
+  padding-right: 1.7em;
+}
+
+.note .controls {
+  position: absolute;
+  z-index: 1;
+  right: 0.7em;
+  top: 3px;
+  border-radius: 50%;
+  text-align: center;
+}
+.note .controls .item {
+  box-sizing: content-box;
+  display: inline-block;
+  height: 1em;
+  padding:2px;
+  width: 1em;
+  font-size: 1em;
+  text-align: center;
+  color: #ccc;
+}
+
+.note .controls .pin:hover i,
+.note.pinned .controls .pin i {
+   transform: rotate(45deg);
+   padding-right: 1px;
+}
+
+.note.pinned .controls .pin {
+  color: black;
+}
+
+.note .controls .item:hover{
+  cursor: pointer;
+  color: black;
+}
+.note a {
+  text-decoration: none;
+  color: blue;
+}
+
+.placeholder {
+  display: none;
+}
+.dialog {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+}
+.dialog-content {
+  background:white;
+  margin: 3em auto;
+  max-width: 800px;
+  min-height: 400px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.input {
+  display: block;
+  line-height: 1.2em;
+  font-size: 1.1em;
+  width: 100%;
+  margin-bottom: 3px;
+  border-radius: 2px;
+}
+.textarea {
+  display: block;
+  width: 100%;
+  min-height: 10em;
+}
+.buttons {
+  overflow: auto;
+}
+.button {
+  float: right;
+  font-size: 2em;
+  border: solid 1px green;
+  border-radius: 3px;
+  background: #defede;
+}
+.error {
+  margin: 10px 3px;
+  padding: 5px;
+  border: solid 1px red;
+  background: #fea2a2;
+  font-weight: bold;
+  visibility: hidden;
+}

@@ -1,0 +1,11 @@
+[
+  {"time": 2, "title":"Normalní poznámka", "text":"Chcete něco sdělit svým posluchačům?"},
+  {"time": 5, "title":"Poznámka s ikonou", "text":"Používáme skvělé ikony z rodiny font-awesome, aby byl Váš zážitek ještě intenzivnější.", "icon":"times"},
+  {"time": 10, "title" : "Poznámka s obrázkem", "image" : "https://cs.wikipedia.org/static/images/project-logos/cswiki.png", "text":"Některé mohou mít obrázek k dokreslení o co jde :-)"},
+  { "time": 12,
+    "title" : "Poznámka s obrázkem jako odkaz",
+    "image" : "https://cs.wikipedia.org/static/images/project-logos/cswiki.png",
+    "text":"A někdy je prostě možné celou poznámkou odkazovat někam na internet :-)?",
+    "target" : "https://cs.wikipedia.org/static/images/project-logos/cswiki.png"
+  }
+]
