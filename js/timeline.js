@@ -17,7 +17,7 @@ var Timeline = function () {
     if(list == undefined)
       throw "No list assigned";
 
-    list.appendChild(buildNote(note));
+    list.prepend(buildNote(note));
   }
   function _loadItems(pitems) {
     items = pitems;
